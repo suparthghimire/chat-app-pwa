@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #2a2a2a;
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 100px 0;
+    height: 100%;
+}
+
+.chat-list {
+    max-height: 95%;
+    overflow: auto;
+}
+
+.chat-item {
+    padding: 10px;
+    margin: 10px;
+    background-color: #424242;
+}
+
+.chat-message {
+    max-width: 100%;
+    text-align: justify;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    width: 98%;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    background: rgb(69, 69, 248);
+    min-width: 100px;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+.user {
+    border-radius: 20px 20px 0 20px;
+    background: #ff7878;
+    color: #fff;
+}
+
+.other {
+    border-radius: 20px 20px 20px 0;
+}
+
+.bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #2a2a2a;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.info a {
+    color: white;
+}
+
+.icon-info {
+    font-size: 0.5rem;
+    font-style: italic;
+}
